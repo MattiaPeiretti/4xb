@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="language" content="nl">
+    <meta charset="UTF-8">
+    <meta name="revised" content="Wednesday, March 20th, 2024, 3:36 pm">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Four Times Better: Jouw website, maar dan vier keer beter">
+    <title>
+        Four Times Better
+    </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+            <link href="BX4.css" rel="stylesheet" type="text/css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    -->
+    <meta property="twitter:title" content="Four Times Better">
+    <meta property="twitter:description" content="Four Times Better: Jouw website, maar dan vier keer beter">
+    <meta property="og:title" content="Four Times Better">
+    <meta property="og:description" content="Four Times Better: Jouw website, maar dan vier keer beter">
+    <meta property="og:image" content="https://sqmi.nl/canary-portrait.jpeg">
+    <style>
+        * {
+            margin: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+        }
+
+        /*
+            light-bg: #fbfbfb;
+            dark-bg: #011267;
+            text-color: #121212;
+            text-dark-bg: #ffffff;
+            c-1: #77b978;
+            c-2: #f37262;
+        */
+
+        html {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+            "Droid Sans", "Helvetica Neue", sans-serif;
+            /* was "Mulish", Arial, Helvetica, sans-serif; */
+            line-height: 1.33;
+            font-weight: 600;
+        }
+
+        /*.wash {*/
+        /*    padding-top: 0.5em;*/
+        /*    padding-bottom: 2em;*/
+        /*    overflow: hidden;*/
+        /*    margin-right: 40px;*/
+        /*}*/
+
+        .top-level-section, header, .body {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        header {
+            padding-top: 0.8em;
+        }
+
+        section {
+            overflow: hidden;
+        }
+
+        footer, .banner {
+            clear: both;
+            background-color: #011267;
+            opacity: 0.85;
+            color: #FFFFFF;
+            padding: 4em 0 2em;
+        }
+
+        h1, h2, h3, h4, h5, b, dt, .button, .bullet {
+            font-weight: 800;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+
+        p {
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+
+        nav {
+            float: right;
+            margin-right: 0.75em;
+        }
+
+        nav li {
+            list-style: none;
+            display: inline-block;
+            margin: 1.5em 0.75em;
+            font-weight: 600;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav li a, nav li a:visited {
+            color: black;
+        }
+
+        nav li a:hover {
+            border-bottom: 2px solid #011267;
+            color: #011267;
+        }
+
+        dt {
+            margin-top: 0.5em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1.2em 2em;
+            text-transform: uppercase;
+            margin-right: 0.2em;
+            text-decoration: none;
+            font-size: 110%;
+        }
+
+
+        .four {
+            transform: skew(40deg, -40deg);
+            font-weight: 800;
+            color: #011267;
+            text-shadow: -0.09em 0 #fc7f06;
+        }
+
+        .logo {
+            float: left;
+            font-size: 300%;
+            margin: 0;
+        }
+
+        .moniker {
+            float: left;
+            font-size: 175%;
+            font-weight: 800;
+            max-width: 15em;
+            padding: 0.5em 0 1em 1em;
+        }
+
+        .bullet {
+            font-size: 200%;
+            margin: -0.15em 1em 1em 0;
+            color: #27357e;
+        }
+
+        h1 {
+            font-size: 400%;
+            padding: 0.5em 0 0.8em;
+        }
+
+        .headline p {
+            color: white;
+            font-size: 100%;
+            margin-bottom: 1.8em;
+        }
+
+        h1, .headline p {
+            max-width: 70%;
+        }
+
+        h1 span {
+            font-style: italic;
+            color: #011267;
+        }
+
+        main > section {
+            padding-top: 3em;
+            clear: both;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 90%;
+            color: #011267;
+            padding-top: 2em;
+            padding-bottom: 1em;
+
+        }
+
+        h3 {
+            font-size: 300%;
+            padding-bottom: 0.5em;
+            clear: both;
+        }
+
+        h4 {
+            font-size: 150%;
+            color: #011267;
+            margin: 2em 0 1em;
+        }
+
+        .cta-link {
+            color: #011267;
+            display: block;
+            padding: 1em 0;
+            text-decoration: none;
+        }
+
+        main > section > section > p {
+            margin-top: 1.2em;
+        }
+
+        .top-level-section {
+            padding: 4em 0;
+        }
+
+        .half {
+            width: 50%;
+            max-width: 578px;
+            padding: 40px 40px 40px 0;
+            float: left;
+        }
+
+        .half img {
+            float: right;
+            padding: 0;
+            margin-bottom: 40px;
+            width: 100%;
+            height: auto;
+        }
+
+        .third {
+            width: 33.33%!important;
+            max-width: 358px;
+            padding-right: 20px;
+            float: left;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        .fact, .quote {
+            display: inline-block;
+            width: 25%;
+            margin: 10px;
+            background-color: #FFFFFF;
+            border-bottom: solid 4px #fc7f06;
+            padding: 2em 2em;
+
+        }
+
+        .fact {
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            text-align: left;
+            margin-top: 1em;
+        }
+
+        .small-text {
+            font-size: 90%;
+        }
+
+        .profile picture {
+            margin-right: 1em;
+        }
+
+        .profile p + p {
+            margin: 0;
+        }
+
+
+        .mugshot {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+        }
+
+        h5 {
+            font-size: 400%;
+            color: #011267;
+            padding: 0.5em 0;
+        }
+
+        .name {
+            font-weight: 400;
+        }
+
+        .darklight-background {
+            background-color: #fbfbfb;
+        }
+
+
+        .card {
+            display: inline-block;
+            height: 26em;
+            margin: 10px;
+            background-color: #FFFFFF;
+            border-bottom: solid 4px #fc7f06;
+            padding: 2em 2em;
+            box-shadow: 0px 0px 35px 1px rgba(49,50,55,.08);
+        }
+
+        @media screen and (max-width: 60rem) {
+            h1 {
+                font-size: 300%;
+            }
+
+            h3 {
+                font-size: 200%;
+            }
+
+            .third {
+                display: block;
+                float: none;
+                padding: 0 0 2em;
+                margin: 0 auto 2em;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 40rem) {
+            h1 {
+                font-size: 200%;
+            }
+
+            .half {
+                display: block;
+                float: none;
+                width: 100%;
+            }
+        }        </style>
+</head>
+<body>
+<header>
+    <div class="logo four">4</div>
+    <div class="moniker">Four Times Better</div>
+    <nav>
+        <ul>
+            <li><a href="#about">Over ons</a>
+            <li><a href="#expertise">Expertise</a>
+            <li><a href="#contact">Contact</a>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="banner">
+        <div class="body headline">
+            <h1>Stel je de voor&shy;pagina van je website voor, maar dan <span>vier keer beter</span></h1>
+            <p>
+                Tegenwoordig is je website niet zomaar een website, het is het gezicht van je bedrijf.
+                Door je website te verbeteren verbeter je je merk en marketing, en bereik je meer klanten.
+                We richten ons op vier specifieke aspecten: we versnellen je website, maken hem
+                toegankelijker, verbeteren zijn 'ranking' en zorgen dat het goed werkt op meer browsers.
+            </p>
+            <div>
+                <a href="#diensten" class="cta-link"><strong>Bekijk onze expertise →</strong></a>
+            </div>
+        </div>
+    </div>
+    <section class="top-level-section">
+        <h2>Goede Voorpagina?</h2>
+        <section>
+            <h3 class="half">Waarom is je voor&shy;pagina zo belang&shy;rijk?</h3>
+            <p class="half">
+                Een excellente voorpagina onderscheidt jou van de massa.
+                Het plaatst je vooraan in de rij: bezoekers zullen je vaker vinden, langer blijven, en het
+                allerbelangrijkste, ze zullen vaker terugkomen.
+            </p>
+            <section class="break half">
+                <h4>Prestaties</h4>
+                <p>
+                    Een trage laadtijd kan leiden tot verlies van bezoekers en het uitblijven van conversies.
+                    Google en andere zoekmachines gebruiken allerlei metingen om te bepalen waar jouw website in de
+                    zoekresultaten uitkomt.
+                    De belangrijkste factor hierbij is hoe snel een webpagina klaar is om gelezen te worden.
+                    Ook haken bezoekers vaak af als een website traag is.
+                    Als je geen leads wilt verliezen kunnen wij je helpen om je website uitstekend te laten presteren.
+                </p>
+            </section>
+            <section class="half">
+                <h4>Toegankelijkheid</h4>
+                <p>
+                    Het uitsluiten van een groot publiek, vooral oudere gebruikers, kan eenvoudig gebeuren. Denk aan:
+                <dl>
+                    <dt>Bezoekers met beperkte motoriek
+                    <dd>Links en knopjes kunnen te klein zijn of te dicht bij elkaar en daardoor moeilijk te raken
+                    <dt>Iemand die geen leesbril bij de hand heeft
+                    <dd>Te kleine en vage fonts kunnen jouw website onbruikbaar maken
+                    <dt>Mensen die niet meer goed kunnen zien
+                    <dd>Te weinig contrast tussen tekst en achtergrond is echt een belemmering
+                </dl>
+                <p>
+            </section>
+            <section class="break half">
+                <h4>‘Google Lighthouse’ beoordeling</h4>
+                <p>
+                    Je kunt je ‘Lighthouse Rating’ rechtstreeks van Google verkrijgen.
+                    Ze gebruiken deze rating om websites in de zoekresultaten te plaatsen.
+                    Daarnast is de rating een indicatie van hoe een bezoeker jouw website zal ervaren.
+                </p>
+                <p>
+                    Een hele belangrijke aspect is dat jouw website op zowel desktop als mobiel goed werkt.
+                </p>
+            </section>
+            <section class="half">
+                <h4>Naleving van internationale normen</h4>
+                <p>
+                    De World Wide Web Consortium (w3.org) geeft richtlijnen en normen uit waaren websites beter aan
+                    kunnen voldoen.
+                    Voldoet jouw website er niet aan, dan maakt het uit welke browser een bezoeker gebruikt.
+                    Denk aan Internet Explorer: je site kan er heel anders uitzien, zelfs niet goed werken!
+                </p>
+            </section>
+        </section>
+    </section>
+    <div class="darklight-background">
+        <section class="top-level-section">
+            <section>
+
+                <div class="half">
+                    <h3 id="about">Over ons</h3>
+                    <p>
+                        Met meer dan twintig jaar ervaring in de sector staat Four Times Better aan de top van
+                        webontwikkeling en -verbetering. Ons toegewijde team streeft naar voortdurende educatie en
+                        innovatie, waardoor we uitzonderlijke resultaten kunnen leveren, en onze status als pioniers in
+                        het veld behouden.
+                    </p>
+                    <a href="#diensten" class="cta-link"><strong>Wat kunnen we voor uw betekenen?</strong></a>
+                </div>
+                <picture class="half">
+                    <source srcset="team.webp" type="image/webp">
+                    <source srcset="team.jpg" type="image/jpeg">
+                    <img src="team.jpg" alt="" width=616 height=532>
+                </picture>
+
+                <section class="break wash">
+                    <h4>Wat kunnen we voor je betekenen?</h4>
+                    <section class="third fact"><h5>20</h5>
+                        <p>Jaar Ervaring</p></section>
+                    <section class="third fact"><h5>4</h5>
+                        <p>Focuspunten</p></section>
+                    <section class="third fact"><h5>100+</h5>
+                        <p>Projecten</p></section>
+                </section>
+            </section>
+        </section>
+    </div>
+
+
+    <section class="top-level-section">
+        <h2 id="expertise">Onze expertise</h2>
+        <section>
+            <h3 class="half">Waarom voor ons kiezen?</h3>
+            <div class="half">
+                <p>
+                    Bij Four Times Better hanteren we een 4x-benadering voor al onze projecten.
+                    Door ons te concentreren op websiteprestaties, toegankelijkheid, SEO en naleving van normen, helpen
+                    wij onze klanten een beter rendement te halen.
+                </p>
+                <p>
+                    Met onze 20 jaar ervaring in de webontwikkelingsbranche en onze bewezen staat van dienst, zijn we
+                    als weinig anderen in staat je goed,
+                    snel en vakkundig te helpen, zonder dat je daarvoor veel moet betalen.
+                </p>
+            </div>
+            <section class="break half card">
+                <h4>Prestatieverbetering</h4>
+                <p>
+                    Een trage laadtijd kan leiden tot verlies van bezoekers en het uitblijven van conversies.
+                    Google en andere zoekmachines gebruiken allerlei metingen om te bepalen waar jouw website in de
+                    zoekresultaten uitkomt.
+                    De belangrijkste factor hierbij is hoe snel een webpagina klaar is om gelezen te worden.
+                    Ook haken bezoekers vaak af als een website traag is.
+                    Als je geen leads wilt verliezen kunnen wij je helpen om je website uitstekend te laten presteren.
+                </p>
+            </section>
+            <section class="half card">
+                <h4>Voldoen aan industriestandaarden en andere best practices</h4>
+                <p>
+                    Onze aanpak zorgt ervoor dat jouw website voldoet aan de nieuwste normen en voorschriften.
+                    Het is essentieel dat een site deze digitale 'regels' volgt om goed te presteren en hoog te scoren
+                    in de zoekresultaten van zoekmachines,
+                    en om het vertrouwen van de gebruikers te behouden.
+                <p>
+            </section>
+            <section class="break half card">
+                <h4>Google rating verbeteren</h4>
+                <p>
+                    Wij verwerken de issues die in de 'Google Lighthouse' rapport staan, zowel voor die desktop als voor
+                    mobile.
+                    Wij verbeteren daarmee zowel de plaatsing van je website in zoekresultaten als het gevoel dat je
+                    gebruikers eraan overhouden.
+                    Dit zorgt voor meer bezoekers, dat ze langer blijven en dat ze vaker terugkomen.
+                </p>
+            </section>
+            <section class="half card">
+                <h4>Toegankelijkheid verbeteren</h4>
+                <p>
+                    Wij geven prioriteit aan het begrijpelijk maken van je site voor alle gebruikers.
+                    Wat ons onderscheidt, is dat we ons ook richten op toegankelijkheid voor oudere gebruikers, iets dat
+                    veel digitale bureaus naast zich neer leggen.
+                    Dit zorgt ervoor dat jouw website een breed publiek bedient en maatschappelijk verantwoord
+                    ondernemen demonstreert.
+                </p>
+            </section>
+        </section>
+    </section>
+    <div class="wrapper darklight-background">
+        <section class="top-level-section">
+            <h2 id="klanten">Tevreden Klanten</h2>
+            <section>
+                <h3 class="third">Wat onze klanten zeggen</h3>
+                <div class="third quote">
+                    <p>
+                        “De aanpak van Four Times Better was professioneel, gestructureerd en haalde de deadlines.
+                        Dankzij hun advies kon ik voor mijn klanten websites hoger in Google laten ranken, wat hen blij
+                        maakte, omdat ze hun omzet zagen stijgen.”
+                    </p>
+                    <div class="profile">
+                        <picture>
+                            <source srcset="matt-peiretti.webp" type="image/webp">
+                            <source srcset="matt-peiretti.jpg" type="image/jpeg">
+                            <img class="mugshot" src="matt-peiretti.jpg"
+                                 alt="Portrait of Mattia Peiretti, one of Four Times Better's first clients">
+                        </picture>
+                        <div>
+                            <p class="name">Mattia Peiretti</p>
+                            <p class="small-text">Founding Partner & CTO</p>
+                            <p class="small-text">PhobosMedia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="third quote">
+                    <p>
+                        “Four Times Better heeft ons laten zien dat er vier problemen waren in de code van één van onze
+                        websites, ifsq.org.
+                        Ze hebben in 2 dagen het nodige gedaan om de voorpagina 8 keer sneller te maken.
+                        Sindsdien geeft ook de validator van W3C ons een perfecte score.”
+                    </p>
+                    <div class="profile">
+                        <picture>
+                            <source srcset="aaron-tasker.webp" type="image/webp">
+                            <source srcset="aaron-tasker.jpg" type="image/jpeg">
+                            <img class="mugshot" src="aaron-tasker.jpg"
+                                 alt="Portrait of Aaron Tasker, one of Four Times Better's first clients">
+                        </picture>
+                        <div>
+                            <p class="name">Aaron Tasker</p>
+                            <p class="small-text">Head of Engineering</p>
+                            <p class="small-text"> SQMI BV</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</main>
+<!--<footer>-->
+<!--    <div class="banner">-->
+<!--        <h3>-->
+<!--            Software Quality Measurement and Improvement bv-->
+<!--        </h3>-->
+<!--        <p>-->
+<!--            <b>T</b>-->
+<!--            <a href="tel:+31880776775">-->
+<!--                0880 776 775-->
+<!--            </a>-->
+<!--            |-->
+<!--            <b>E</b>-->
+<!--            <a href="mailto:contact@sqmi.nl?subject=Een%20vraag%20aan%20SQMI">-->
+<!--                contact@sqmi.nl-->
+<!--            </a>-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            Dolderseweg 33-B | 3712 BN Huis ter Heide | The Netherlands-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</footer>-->
+</body>
+</html>

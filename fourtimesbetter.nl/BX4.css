@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	margin-block-start: 0; margin-block-end: 0;
+	margin-inline-start: 0; margin-inline-end: 0;
+	padding: 0;
+	border: 0; border-radius: 0;
+	box-sizing: border-box;
+}
+
+/*
+	light-bg: #fbfbfb;
+	dark-bg: #011267;
+	text-color: #121212;
+	text-dark-bg: #ffffff;
+	c-1: #77b978;
+	c-2: #f37262;
+*/
+
+html {
+	background-color: #FFFFFF; color: #000000;
+	font-family: "Mulish", Arial, Helvetica, sans-serif;
+	line-height: 1.33; font-weight: 600;
+}
+.wash { background-color: #F0F0F8; padding-top: 0.5em; padding-bottom: 2em; }
+header, h2, main > section section, .body { max-width: 1200px; margin: 0 auto; padding-left: 40px; }
+header { padding-top: 0.8em; }
+footer, .banner { clear: both; background-color: #011267; opacity: 0.85; color: #FFFFFF; padding: 4em 0 2em; }
+h1, h2, h3, h4, h5, b, dt, .button, .bullet { font-weight: 800; }
+p { line-height: 1.8; }
+p + p { margin-top: 1em; }
+
+nav { float: right; margin-right: 0.75em; }
+nav li { list-style: none; display: inline-block; margin: 1.5em 0.75em; font-weight: 600; }
+nav li a { text-decoration: none; }
+nav li a, nav li a:visited { color: black; }
+nav li a:hover { border-bottom: 2px solid #ff8f20; color: #ff8f20; }
+
+dt { margin-top: 0.5em; }
+
+.button {
+	display: inline-block; padding: 1.2em 2em; text-transform: uppercase;
+	margin-right: 0.2em; text-decoration: none; font-size: 110%;
+}
+.button, button:visited { background-color: #229db8; color: #FFFFFF; }
+.button:hover { background-color: #ff8f20; }
+.cta { background-color: #ff8f20; color: #FFFFFF; }
+.cta:hover { background-color: #229db8; }
+
+.four { transform: skew(40deg, -40deg); font-weight: 800; color: #229db8; text-shadow: -0.09em 0 #ff8f20; }
+.logo { float: left; font-size: 300%; margin: 0; }
+.moniker { float: left; font-size: 175%; font-weight: 800; max-width: 15em; padding: 0.5em 0 1em 1em; }
+.bullet { font-size: 200%; margin: -0.15em 1em 1em 0; color: #27357e; }
+
+h1 { font-size: 400%; padding: 0.5em 0 0.8em;}
+.headline p { color: white; font-size: 100%; margin-bottom: 1.8em; }
+h1, .headline p { max-width: 70%; }
+h1 span { font-style: italic; color: #ff8f20; }
+
+main > section { padding-top: 3em; clear: both; }
+h2 { text-transform: uppercase; font-size: 90%; color:#229db8; padding-top: 3em; }
+h3 { font-size: 300%; clear: both; }
+h4 { font-size: 150%; color: #ff8f20; margin: 2em 0 1em; }
+img.half  { float: right; padding: 0; }
+
+main > section > section > p { margin-top: 1.2em; }
+.half { max-width: 578px; padding: 40px 40px 40px 0; float: left; }
+.third { max-width: 358px; padding: 40px 40px 40px 0; float: left; }
+.break { clear: both; }
+
+.fact, .quote {
+	display: inline-block; width: 25%; margin: 2.5%;
+	background-color: #FFFFFF; border-bottom: solid 4px #ff8f20; padding-bottom: 2em;
+ }
+.fact {
+	text-align: center;
+}
+.quote {
+}
+
+h5 { font-size: 400%; color: #229db8; padding: 0.5em 0;}
